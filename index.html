@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Personal Resume</title>
-    <link rel = "stylesheet" href="style.css">
+    <title>Create Your Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Syeda Aiman</h1>
-        <p>Aimanbaqiri@outlook.com</p>
-        <p>03492898685</p>
-        <img src ="profilepic.jpeg"
-        alt = "Profile Picture" id = "profile-picture">    
-    </header>
-    
-    <section id = "Education">
-        <h1>Education</h1>
-        <ul>
-            <li>
-                Bechelors in commerce - University of karachi
-            </li>
-            <li>
-                bechelors in Islamic studies - University of karachi
-            </li>
-           
-        </ul>
-    </section>
+    <h1>Create Your Resume</h1>
 
-    <section id = "skills">
-        <h1>Skills</h1>
-        <ul>
-            <li>Html , CSS , Typescript</li>
-            <li>React , next.js</li>
-            <li>Version Control (Git , Github)</li>
-            
-        </ul>
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
 
-    </section>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required><br>
+        </fieldset>
 
-    
-    <button id="toggleSkills">Toggle Skills Section</button>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education:</label>
+            <textarea id="education" name="education" required></textarea><br>
+        </fieldset>
 
-    <section id = "work-exprience">
-        <h1>Work Exprience</h1>
-        <p>learning Frontend development No prior Exprience but fully enthausiastic to gain real
-            real world exprience
-        </p>
+        <fieldset>
+            <legend>Work Experience</legend>
+            <label for="workExperience">Work Experience:</label>
+            <textarea id="workExperience" name="workExperience" required></textarea><br>
+        </fieldset>
 
-    </section>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills:</label>
+            <textarea id="skills" name="skills" required></textarea><br>
+        </fieldset>
 
-    <script src = "app.js"></script>
+        <button type="submit">Generate My Resume</button>
+    </form>
+
+    <div id="resume">
+        <h2>Generated Resume</h2>
+        <div id="resumeContent"></div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
-
-
 </html>
