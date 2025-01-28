@@ -1,51 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Create Your Resume</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Resume</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Create Your Resume</h1>
+  <header>
+    <h1>Dynamic Resume Builder</h1>
+  </header>
 
-    <form id="resumeForm">
-        <fieldset>
-            <legend>Personal Information</legend>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
+  
+  <form id="resumeForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br>
 
-            <label for="phone">Phone:</label>
-            <input type="text" id="phone" name="phone" required><br>
-        </fieldset>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" required><br>
 
-        <fieldset>
-            <legend>Education</legend>
-            <label for="education">Education:</label>
-            <textarea id="education" name="education" required></textarea><br>
-        </fieldset>
+    <label for="education">Education:</label>
+    <textarea id="education" required></textarea><br>
 
-        <fieldset>
-            <legend>Work Experience</legend>
-            <label for="workExperience">Work Experience:</label>
-            <textarea id="workExperience" name="workExperience" required></textarea><br>
-        </fieldset>
+    <label for="workExperience">Work Experience:</label>
+    <textarea id="workExperience" required></textarea><br>
 
-        <fieldset>
-            <legend>Skills</legend>
-            <label for="skills">Skills:</label>
-            <textarea id="skills" name="skills" required></textarea><br>
-        </fieldset>
+    <label for="skills">Skills:</label>
+    <textarea id="skills" required></textarea><br>
 
-        <button type="submit">Generate My Resume</button>
-    </form>
+    <button type="submit">Generate Resume</button>
+  </form>
 
-    <div id="resume">
-        <h2>Generated Resume</h2>
-        <div id="resumeContent"></div>
-    </div>
+  
+  <div id="resumeContent" style="margin-top: 20px;"></div>
 
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
