@@ -1,58 +1,131 @@
-/* General Styles */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+#resumeContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+#resumeContent h1 {
+  font-size: 24px;
+  color: #007bff;
+}
+
+#resumeContent h2 {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  color: #333;
+}
+
+
+#resumeLink {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+#generatedLink {
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#copyLinkButton {
+  margin-top: 10px;
+  background-color: #28a745;
+}
+
+#copyLinkButton:hover {
+  background-color: #218838;
+}
+
+
+#downloadPdfButton {
+  margin-top: 10px;
+  background-color: #dc3545;
+}
+
+#downloadPdfButton:hover {
+  background-color: #c82333;
+}
+
+
+@media (max-width: 600px) {
+  form, #resumeContent, #resumeLink {
+      width: 90%;
   }
-  
-  form {
-    margin-bottom: 30px;
-  }
-  
-  fieldset {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  
-  legend {
-    font-weight: bold;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  #resume {
-    margin-top: 40px;
-  }
-  
-  #resumeContent {
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-  }
-  
-  h2 {
-    color: #333;
-  }
-  
+}
